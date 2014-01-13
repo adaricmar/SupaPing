@@ -1,7 +1,7 @@
 SupaPing
 ========
 
-Ping-spamming application for Dota 2 on Win32/Linux. Spam the hell out of your team when they are being idiots, and get communications-banned!
+Ping-spamming application for Dota 2 on Win32/Linux. Spam the hell out of your teammates when they are being idiots, and get communications-banned!
 
 
 Features:
