@@ -5,7 +5,7 @@ Ping-spamming application for Dota 2 on Win32/Linux. Spam the hell out of your t
 
 
 Usage
-========
+--------
 
 Get the binaries from the bin folder.
 
@@ -15,7 +15,7 @@ On Linux, cd to the directory where the executable is, do a sudo chmod 777 to gi
 
 
 Compiling
-========
+--------
 
 Compiling on Linux should consist of:
 
@@ -28,7 +28,7 @@ Compiling on Windows should consist of:
       
       
 Troubleshooting
-========
+--------
 
 On Linux, you must choose the proper device you want to listen for the ALT key on. By default it listens to device 12; if this does not work, run xinput, find your keyboard device id, and use the id number as an argument. For example, if my keyboard device is 11, usage would be ./SupaPing 11.
 
