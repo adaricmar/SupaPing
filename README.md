@@ -32,6 +32,7 @@ Options:
 
 -r to set a random delay between pings, as an alternative to as-fast-as-possible.
 
+Please remember to give SupaPing your keyboard's device id from xinput, else it may listen for input on a wrong device. See Troubleshooting for more information.
 
 
 
