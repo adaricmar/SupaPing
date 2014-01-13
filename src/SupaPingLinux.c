@@ -339,7 +339,7 @@ int main(int argc, char *argv[]) {
   pthread_create(&dw, NULL, (void *) &doWork, (void *) &thread_args);
   
   
-  printf("Done! You can now press ALT to SupaPing!  \n");
+  printf("Done! You can now hold ALT to SupaPing!  \n");
   
  
   
