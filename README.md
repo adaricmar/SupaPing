@@ -4,6 +4,13 @@ SupaPing
 Ping-spamming application for Dota 2 on Win32/Linux. Spam the hell out of your team when they are being idiots, and get communications-banned!
 
 
+Features:
+
+ * Multithreaded Pinging! Utilize all of your cores for maximum pinging potential!
+ * FPS-friendly! Uses 0% of system resources when not pinging.
+ * VAC-safe!
+ * Linux support!
+
 Usage
 --------
 
@@ -11,7 +18,22 @@ Get the binaries from the bin folder.
 
 On Windows, open the .exe and leave it open in the background. Switch to Dota 2, and hold ALT to ping.
 
-On Linux, cd to the directory where the executable is, do a sudo chmod 777 to give yourself permissions to run it, and do ./SupaPing. Switch to Dota 2, and hold ALT to ping. Running SupaPing with the -r argument will give you a randomly-determined delay between pings, as an alternative to as-fast-as-possible.
+On Linux, cd to the directory where the executable is. 
+
+Then,
+
+      sudo chmod 777 SupaPing 
+
+to give yourself permissions to execute it. Then,
+
+      ./SupaPing [OPTIONS] [DEVICE ID]
+
+Options: 
+
+-r to set a random delay between pings, as an alternative to as-fast-as-possible.
+
+
+
 
 
 Compiling
@@ -19,7 +41,11 @@ Compiling
 
 Compiling on Linux should consist of:
 
-      gcc/clang SupaPingLinux.c -o SupaPing -lpthread -lx11 -lxi
+      gcc SupaPingLinux.c -o SupaPing -lpthread -lx11 -lxi
+
+or
+
+      clang SupaPingLinux.c -o SupaPing -lpthread -lx11 -lxi
       
       
 Compiling on Windows should consist of:
