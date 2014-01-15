@@ -14,7 +14,7 @@ Features:
 Usage
 --------
 
-Get the binaries from the bin folder. Please right click -> save as.
+Get the binaries from the bin folder. Please right click -> save as. 
 
 On Windows, open the .exe and leave it open in the background. Switch to Dota 2, and hold ALT to ping.
 
