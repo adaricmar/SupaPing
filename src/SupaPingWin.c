@@ -3,7 +3,7 @@
 #define _WIN32_WINNT 0x0500
 #include <stdio.h>
 #include <windows.h>
-#include <pthread.h>
+#include <pthread.h> 
 #include <assert.h>
    
 int altKeyPressed = 0;
@@ -59,7 +59,7 @@ void LeftClick()
 	SendInput( 1, &Input, sizeof(INPUT) );								// Send the input.
 }
     
-void * doWork(void *) {
+void * doWork(void * argA) {
    
     int pingCount = 0;
  
