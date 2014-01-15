@@ -47,16 +47,14 @@ LRESULT CALLBACK keyboardHookProc(int nCode, WPARAM wParam, LPARAM lParam) {
     
 void LeftClick()
 {  
-	INPUT    Input={0};													// Create our input.
-
-	Input.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	Input.mi.dwFlags  = MOUSEEVENTF_LEFTDOWN;							// We are setting left mouse button down.
-	SendInput( 1, &Input, sizeof(INPUT) );								// Send the input.
-
-	ZeroMemory(&Input,sizeof(INPUT));									// Fills a block of memory with zeros.
-	Input.type        = INPUT_MOUSE;									// Let input know we are using the mouse.
-	Input.mi.dwFlags  = MOUSEEVENTF_LEFTUP;								// We are setting left mouse button up.
-	SendInput( 1, &Input, sizeof(INPUT) );								// Send the input.
+	INPUT    Input={0};
+	Input.type        = INPUT_MOUSE;
+	Input.mi.dwFlags  = MOUSEEVENTF_LEFTDOWN;
+	SendInput( 1, &Input, sizeof(INPUT) );
+	ZeroMemory(&Input,sizeof(INPUT));
+	Input.type        = INPUT_MOUSE;
+	Input.mi.dwFlags  = MOUSEEVENTF_LEFTUP;
+	SendInput( 1, &Input, sizeof(INPUT) );
 }
     
 void * doWork(void * argA) {
