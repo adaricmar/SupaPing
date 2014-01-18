@@ -23,7 +23,7 @@ LRESULT CALLBACK keyboardHookProc(int nCode, WPARAM wParam, LPARAM lParam) {
     PKBDLLHOOKSTRUCT p = (PKBDLLHOOKSTRUCT) (lParam);
     
     if (wParam == WM_SYSKEYDOWN && p->vkCode == VK_LMENU) {
-      
+      https://github.com/adaricmar/SupaPing
 	  
 	  altKeyPressed = 1;
     }

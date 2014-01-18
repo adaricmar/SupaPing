@@ -312,7 +312,7 @@ void doWork(void) {
 int main(int argc, char *argv[]) {
   
   
-  printf("DOTA 2 SupaPing by MedicPlz! \n");
+  printf("DOTA 2 SupaPing by Adam Martinez! \n");
 
   if (argc > 3) {
 	printf("Too many command line arguments! \n");
