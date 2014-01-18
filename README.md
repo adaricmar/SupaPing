@@ -51,7 +51,7 @@ or
       
 Compiling on Windows should consist of:
 
-      mingw32-gcc SupaPingWin.c -o SupaPing.exe -lpthread
+      mingw32-gcc SupaPingWin.c -o SupaPing.exe -static -lpthread
       
 with the win32-pthread headers installed.
       
