@@ -30,7 +30,6 @@ to give yourself permissions to execute it. Then,
 
 Options: 
 
--r to set a random delay between pings, as an alternative to as-fast-as-possible.
 
 Please remember to give SupaPing your keyboard's device id from xinput, else it may listen for input on a wrong device. See Troubleshooting for more information.
 
@@ -42,12 +41,7 @@ Compiling
 
 Compiling on Linux should consist of:
 
-      gcc SupaPingLinux.c -o SupaPing -lpthread -lx11 -lxi
-
-or
-
-      clang SupaPingLinux.c -o SupaPing -lpthread -lx11 -lxi
-      
+	make      
       
 Compiling on Windows should consist of:
 
