@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 
       else {
 
-	if (legacyClick = false) {
+	if (legacyClick == false) {
 
 	  xdo_move_mouse(xdo,1500,950,0);
 	  xdo_mouse_down(xdo,CURRENTWINDOW,1);
@@ -93,7 +93,11 @@ int main(int argc, char* argv[]) {
 
 	rightClicks++;
 
-	std::cout << "Right click #" << rightClicks << "\n";
+	if(legacyClick) 
+	  std::cout << "Legacy click #" << rightClicks << std::endl;
+	else
+	  std::cout << "Right click #" << rightClicks << std::endl;
+
 
       }
 
